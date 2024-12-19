@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade and CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grade and CGPA Calculator</h1>
+        <form id="marksForm">
+            <div class="input-group">
+                <label for="subject1">Subject 1:</label>
+                <input type="number" id="subject1" placeholder="Enter marks out of 100" required>
+            </div>
+            <div class="input-group">
+                <label for="subject2">Subject 2:</label>
+                <input type="number" id="subject2" placeholder="Enter marks out of 100" required>
+            </div>
+            <div class="input-group">
+                <label for="subject3">Subject 3:</label>
+                <input type="number" id="subject3" placeholder="Enter marks out of 100" required>
+            </div>
+            <div class="input-group">
+                <label for="subject4">Subject 4:</label>
+                <input type="number" id="subject4" placeholder="Enter marks out of 100" required>
+            </div>
+            <div class="input-group">
+                <label for="subject5">Subject 5:</label>
+                <input type="number" id="subject5" placeholder="Enter marks out of 100" required>
+            </div>
+            <button type="button" id="calculateBtn">Calculate</button>
+        </form>
+        <div id="results" style="display: none;">
+            <h2>Results</h2>
+            <p id="totalMarks"></p>
+            <p id="averagePercentage"></p>
+            <p id="grade"></p>
+            <p id="cgpa"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
